@@ -5,9 +5,9 @@ async function fetchQuote(category) {
 
     let apiUrl;
     if (category === 'quote-of-the-day') {
-        apiUrl = 'https://api.quotable.io/random';
+        apiUrl = 'https://cors-anywhere.herokuapp.com/https://api.quotable.io/random';
     } else {
-        apiUrl = `https://api.quotable.io/quotes?tags=${category}`;
+        apiUrl = `https://cors-anywhere.herokuapp.com/https://api.quotable.io/quotes?tags=${category}`;
     }
     
     try {
