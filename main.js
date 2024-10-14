@@ -5,9 +5,9 @@ async function fetchQuote(category) {
 
     let apiUrl;
     if (category === 'quote-of-the-day') {
-        apiUrl = 'http://api.quotable.io/random';
+        apiUrl = 'https://api.quotable.io/random';
     } else {
-        apiUrl = `http://api.quotable.io/quotes?tags=${category}`;
+        apiUrl = `https://api.quotable.io/quotes?tags=${category}`;
     }
     
     try {
