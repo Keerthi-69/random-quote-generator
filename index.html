@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="title">Random Quote Generator</h1>
+        <div class="category-buttons">
+            <button id="quote-of-the-day-btn" class="active" onclick="fetchQuote('quote-of-the-day')">Quote of the Day</button>
+            <button id="friendship-btn" onclick="fetchQuote('friendship')">Friendship</button>
+            <button id="life-btn" onclick="fetchQuote('life')">Life</button>
+            <button id="love-btn" onclick="fetchQuote('love')">Love</button>
+            <button id="inspirational-btn" onclick="fetchQuote('inspirational')">Inspirational</button>
+            <button id="motivational-btn" onclick="fetchQuote('motivational')">Motivational</button>
+            <button id="success-btn" onclick="fetchQuote('success')">Success</button>
+            <button id="wisdom-btn" onclick="fetchQuote('wisdom')">Wisdom</button>
+            <button id="technology-btn" onclick="fetchQuote('technology')">Technology</button>
+        </div>
+    </div>
+
+    <div class="quote-box">
+        <h2 id="quote-category">Quote of the Day</h2>
+        <p id="quote-text">Loading quote...</p>
+        <p id="quote-author" class="quote-author"></p>
+        <button id="new-quote" onclick="fetchQuote(currentCategory)">New Quote</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
