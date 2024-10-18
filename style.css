@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 }
 
 .header {
@@ -15,7 +16,7 @@ body {
 
 .title {
     font-size: 36px;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 40px;
 }
 
@@ -49,7 +50,7 @@ body {
 
 .quote-box {
     text-align: center;
-    background-color: #fff;
+    background-color: #f7f2f2;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
