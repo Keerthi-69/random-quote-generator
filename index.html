@@ -4,34 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Quote Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Random Quote Generator - Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="header">
-        <h1 class="title">Random Quote Generator</h1>
-        <div class="category-buttons">
-            <button id="quote-of-the-day-btn" class="active" onclick="fetchQuote('quote-of-the-day')">Quote of the Day</button>
-            <button id="friendship-btn" onclick="fetchQuote('friendship')">Friendship</button>
-            <button id="life-btn" onclick="fetchQuote('life')">Life</button>
-            <button id="love-btn" onclick="fetchQuote('love')">Love</button>
-            <button id="inspirational-btn" onclick="fetchQuote('inspirational')">Inspirational</button>
-            <button id="motivational-btn" onclick="fetchQuote('motivational')">Motivational</button>
-            <button id="success-btn" onclick="fetchQuote('success')">Success</button>
-            <button id="wisdom-btn" onclick="fetchQuote('wisdom')">Wisdom</button>
-            <button id="technology-btn" onclick="fetchQuote('technology')">Technology</button>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Random Quote Generator</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div class="quote-box">
-        <h2 id="quote-category">Quote of the Day</h2>
-        <p id="quote-text">Loading quote...</p>
-        <p id="quote-author" class="quote-author"></p>
-        <button id="new-quote" onclick="fetchQuote(currentCategory)">New Quote</button>
-    </div>
+    <main>
+        <div class="main-container">
+            <div class="intro">
+                <h2>Welcome to the Random Quote Generator!</h2>
+                <p>
+                    Discover and get inspired by a variety of random quotes every day. Once logged in, you can
+                    explore quotes across different categories and enjoy personalized features.
+                </p>
+            </div>
 
-    <script src="main.js"></script>
+            <div class="image-section">
+                <img src="image.jpg" alt="Inspirational Quotes" />
+            </div>
+
+            <p><strong><a href="login.html">Login</a></strong> or <strong><a href="signup.html">Sign Up</a></strong> to start exploring your personalized quotes!</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Random Quote Generator. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
