@@ -130,4 +130,17 @@ function setActiveButton(category) {
 
 window.onload = () => {
     fetchQuote('quote-of-the-day');
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const email = urlParams.get('email');
+    
+    if (email) {
+        document.getElementById('username').innerText = `Welcome, ${email}`;
+    } else {
+        document.getElementById('username').innerText = 'Welcome, Guest';
+    }
 };
+
+function signOut() {
+    window.location.href = 'index.html';
+}
